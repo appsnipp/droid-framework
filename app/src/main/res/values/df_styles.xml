@@ -1,0 +1,153 @@
+<resources>
+    <!--dimens-->
+    <dimen name="df_dimen_margin">12dp</dimen>
+    <dimen name="df_dimen_ios_margin">12dp</dimen>
+    <dimen name="df_dimen_ios_no_margin">0dp</dimen>
+    <dimen name="df_dimen_card_corner_radius">6dp</dimen>
+    <dimen name="df_dimen_hr_height">1dp</dimen>
+    <dimen name="small_text">13.0sp</dimen>
+    <dimen name="normal_margin">10dp</dimen>
+
+    <!--<colors-->
+    <color name="formBg">#f0f0f0</color>
+    <color name="white">#fff</color>
+    <color name="black_alpha_75">#bf000000</color>
+    <color name="textWhite">#fff</color>
+
+
+
+
+
+    <style name="df_global">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="df_form" parent="df_global">
+        <item name="android:background">@color/formBg</item>
+    </style>
+
+    <!--style for container-->
+    <style name="df_container" parent="df_global">
+        <item name="android:layout_marginTop">@dimen/df_dimen_margin</item>
+        <item name="android:layout_marginLeft">@dimen/df_dimen_margin</item>
+        <item name="android:layout_marginRight">@dimen/df_dimen_margin</item>
+        <item name="android:layout_marginBottom">@dimen/df_dimen_margin</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="df_container_card" parent="df_container">
+        <item name="cardCornerRadius">@dimen/df_dimen_card_corner_radius</item>
+    </style>
+    <style name="df_container_ios_card" parent="df_global">
+        <item name="android:layout_marginTop">@dimen/df_dimen_ios_margin</item>
+        <item name="android:layout_marginLeft">@dimen/df_dimen_ios_no_margin</item>
+        <item name="android:layout_marginRight">@dimen/df_dimen_ios_no_margin</item>
+        <item name="android:layout_marginBottom">@dimen/df_dimen_ios_margin</item>
+
+    </style>
+
+    <style name="df_general_layout" parent="df_global">
+        <item name="android:layout_marginTop">@dimen/df_dimen_margin</item>
+        <item name="android:layout_marginLeft">@dimen/df_dimen_margin</item>
+        <item name="android:layout_marginRight">@dimen/df_dimen_margin</item>
+        <item name="android:layout_marginBottom">@dimen/df_dimen_margin</item>
+    </style>
+
+    <style name="df_general_layout_linear" parent="df_general_layout">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="df_hr">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_height">@dimen/df_dimen_hr_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/df_dimen_margin</item>
+        <item name="android:layout_marginBottom">@dimen/df_dimen_margin</item>
+    </style>
+
+    <style name="df_ios_hr">
+        <item name="android:background">@color/formBg</item>
+        <item name="android:layout_height">@dimen/df_dimen_hr_height</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+    <style name="df_text_small_head" parent="df_global">
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:textColor">@color/black_alpha_75</item>
+    </style>
+    <style name="df_text_small_head_bold" parent="df_global">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!--df grid system-->
+    <!--use linear layout for df grid system-->
+    <!--use linear layout again for columns-->
+
+    <style name="df_row" parent="df_global">
+        <item name="android:padding">6dp</item>
+        <item name="android:weightSum">12</item>
+    </style>
+
+    <style name="df_col_parent">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="df_col_12" parent="df_col_parent">
+
+        <item name="android:layout_weight">12</item>
+    </style>
+    <style name="df_col_11" parent="df_col_parent">
+        <item name="android:layout_weight">11</item>
+    </style>
+    <style name="df_col_10" parent="df_col_parent">
+        <item name="android:layout_weight">10</item>
+    </style>
+    <style name="df_col_9" parent="df_col_parent">
+        <item name="android:layout_weight">9</item>
+    </style>
+    <style name="df_col_8" parent="df_col_parent">
+        <item name="android:layout_weight">8</item>
+    </style>
+    <style name="df_col_7" parent="df_col_parent">
+        <item name="android:layout_weight">7</item>
+    </style>
+    <style name="df_col_6" parent="df_col_parent">
+        <item name="android:layout_weight">6</item>
+    </style>
+    <style name="df_col_5" parent="df_col_parent">
+        <item name="android:layout_weight">5</item>
+    </style>
+    <style name="df_col_4" parent="df_col_parent">
+        <item name="android:layout_weight">4</item>
+    </style>
+    <style name="df_col_3" parent="df_col_parent">
+        <item name="android:layout_weight">3</item>
+    </style>
+    <style name="df_col_2" parent="df_col_parent">
+        <item name="android:layout_weight">2</item>
+    </style>
+    <style name="df_col_1" parent="df_col_parent">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="df_row_vertical" parent="df_global">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--df buttons-->
+    <style name="df_button" parent="df_global">
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:layout_margin">@dimen/normal_margin</item>
+        <item name="android:background">@drawable/rounded_button_primary</item>
+        <item name="android:shadowColor">#7F0000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">5</item>
+    </style>
+</resources>
