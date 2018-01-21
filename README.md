@@ -1,4 +1,6 @@
-# droid-framewk
+# Framework for Android Studio
+Project needs to develop Bootstrap structure for designing.
+Needs to develop library of material and ios components. 
 Project is to develop an open library standards and ready to use framework for android studio(native). Our main aim is to bridge the gap between web designers/developers and android developers.
 
 Many web designers tend not to develop for android studio, mainly because of its complex nature. So we are planning to start a project which would mainly follows the structure of codeignitor and simplicity for designing like bootstrap.
