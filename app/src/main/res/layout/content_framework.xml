@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.thirdeyews.droidframework.FrameworkActivity"
+    tools:showIn="@layout/app_bar_framework"
+    style="@style/df_row_vertical"
+  >
+
+    <ScrollView
+        style="@style/df_global">
+
+        <LinearLayout
+            style="@style/df_row_vertical"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/df_text_small_head_bold"
+                android:text="Buttons"/>
+            <View
+                style="@style/df_hr" />
+
+            <Button
+                android:id="@+id/default_btn"
+                style="@style/df_btn_default"
+                android:text="default"
+                android:layout_width="match_parent"/>
+
+            <Button
+                android:id="@+id/primary_btn"
+                android:layout_width="match_parent"
+                style="@style/df_btn_primary"
+                android:text="Primary"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/success_btn"
+                android:text="Success"
+                style="@style/df_btn_success"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"/>
+
+            <Button
+                android:id="@+id/info_btn"
+                android:text="Info"
+                style="@style/df_btn_info"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"/>
+
+            <Button
+                android:id="@+id/warning_btn"
+                android:text="Warning"
+                style="@style/df_btn_warning"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"/>
+
+            <Button
+                android:id="@+id/danger_btn"
+                android:text="Danger"
+                style="@style/df_btn_danger"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
