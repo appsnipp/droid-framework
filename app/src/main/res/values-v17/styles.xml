@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="demo_grid_text" parent="df_global">
+        <item name="android:background">@color/df_danger</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/df_light</item>
+    </style>
+</resources>

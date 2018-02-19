@@ -6,8 +6,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.thirdeyews.droidframework.FrameworkActivity"
     tools:showIn="@layout/app_bar_framework"
-    style="@style/df_row_vertical"
-  >
+    style="@style/df_row_vertical">
 
     <ScrollView
         style="@style/df_global">
@@ -17,7 +16,293 @@
             android:padding="10dp">
 
             <TextView
-                style="@style/df_text_small_head_bold"
+                style="@style/df_h3"
+                android:text="Grid System"/>
+            <View
+                style="@style/df_hr" />
+
+            <LinearLayout
+                style="@style/df_row_vertical">
+
+                <LinearLayout
+                    style="@style/df_row">
+
+                    <LinearLayout
+                        style="@style/df_col_1">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_1">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_1">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_1">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_1">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_1">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_1">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_1">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_1">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_1">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_1">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_1">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="1"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/df_row">
+
+                    <LinearLayout
+                        style="@style/df_col_2">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="2"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_2">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="2"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_2">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="2"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_2">
+
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text=" 2" />
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_2">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="2"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_2">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="2"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/df_row">
+
+                    <LinearLayout
+                        style="@style/df_col_3">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="3"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_3">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="3"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_3">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="3"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_3">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="3"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/df_row">
+
+                    <LinearLayout
+                        style="@style/df_col_4">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="4"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_4">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="4"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_4">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="4"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/df_row">
+
+                    <LinearLayout
+                        style="@style/df_col_6">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="6"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_6">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="6"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/df_row">
+
+                    <LinearLayout
+                        style="@style/df_col_5">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="5"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_7">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="7"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/df_row">
+
+                    <LinearLayout
+                        style="@style/df_col_4">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="4"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_8">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="8"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/df_row">
+
+                    <LinearLayout
+                        style="@style/df_col_3">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="3"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_9">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="9"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/df_row">
+
+                    <LinearLayout
+                        style="@style/df_col_2">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="2"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_10">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="10"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/df_row">
+
+                    <LinearLayout
+                        style="@style/df_col_1">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/df_col_11">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="11"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/df_row">
+                    <LinearLayout
+                        style="@style/df_col_12">
+                        <TextView
+                            style="@style/demo_grid_text"
+                            android:text="12"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/df_h3"
                 android:text="Buttons"/>
             <View
                 style="@style/df_hr" />
@@ -63,10 +348,178 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"/>
 
+            <TextView
+                style="@style/df_h3"
+                android:text="Bs4 Buttons"/>
+            <View
+                style="@style/df_hr" />
+
+            <Button
+                android:text="Primary"
+                style="@style/df4_btn_primary"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"/>
+
+            <Button
+                android:text="Secondary"
+                style="@style/df4_btn_secondary"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"/>
+
+            <Button
+                android:text="Success"
+                style="@style/df4_btn_success"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"/>
+
+            <Button
+                android:text="Danger"
+                style="@style/df4_btn_danger"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"/>
+
+            <Button
+                android:text="Warning"
+                style="@style/df4_btn_warning"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"/>
+
+            <Button
+                android:text="Info"
+                style="@style/df4_btn_info"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"/>
+
+            <Button
+                android:text="Light"
+                style="@style/df4_btn_light"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"/>
+
+            <Button
+                android:text="Dark"
+                style="@style/df4_btn_dark"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"/>
+
+            <Button
+                android:text="Link"
+                style="@style/df4_btn_link"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                style="@style/df_h3"
+                android:text="Button with badge"/>
+            <View
+                style="@style/df_hr" />
+
+            <android.support.v7.widget.CardView
+                style="@style/df4_btn_primary"
+                android:layout_width="wrap_content">
+
+                <LinearLayout
+                    style="@style/df_row">
+                    <TextView
+                        style="@style/df_global"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="button"/>
+                    <TextView
+                        style="@style/df_badge"
+                        android:text="4"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                style="@style/df_h3"
+                android:text="Alerts"/>
+            <View
+                style="@style/df_hr" />
+
+            <android.support.v7.widget.CardView
+                style="@style/df_alert_primary">
+
+                <TextView
+                    style="@style/df_alert_primary_text"
+                    android:text=" This is a primary alert—check it out! "/>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/df_alert_secondary">
+
+                <TextView
+                    style="@style/df_alert_secondary_text"
+                    android:text=" This is a secondary alert—check it out!"/>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/df_alert_success">
+
+                <TextView
+                    style="@style/df_alert_success_text"
+                    android:text=" This is a success alert—check it out! "/>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/df_alert_warning">
+
+                <TextView
+                    style="@style/df_alert_warning_text"
+                    android:text=" This is a warning alert—check it out! "/>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/df_alert_info">
+
+                <TextView
+                    style="@style/df_alert_info_text"
+                    android:text=" This is a info alert—check it out! "/>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/df_alert_light">
+
+                <TextView
+                    style="@style/df_alert_light_text"
+                    android:text=" This is a light alert—check it out! "/>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/df_alert_dark">
+
+                <TextView
+                    style="@style/df_alert_dark_text"
+                    android:text=" This is a dark alert—check it out! "/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/df_alert_success">
+
+                <LinearLayout
+                    style="@style/df_row_vertical">
+
+                    <TextView
+                        style="@style/df_heading_success"
+                        android:text="Detailed Alert"/>
+
+                    <TextView
+                        style="@style/df_alert_success_text"
+                        android:text="This alert can contain extra information along with a heading"/>
+
+                    <View
+                        style="@style/df_hr_success"/>
+
+                    <TextView
+                        style="@style/df_alert_success_text"
+                        android:text="More detailed text can also be included! "/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
         </LinearLayout>
-
-
-
     </ScrollView>
 
 

@@ -17,8 +17,6 @@
     <!--<bootstrap colors-->
 
 
-
-
     <style name="df_global">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -94,6 +92,8 @@
     <style name="df_col_parent">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">1dp</item>
+        <item name="android:paddingRight">1dp</item>
     </style>
 
     <style name="df_col_12" parent="df_col_parent">
@@ -133,10 +133,31 @@
     <style name="df_col_1" parent="df_col_parent">
         <item name="android:layout_weight">1</item>
     </style>
-
-
     <style name="df_row_vertical" parent="df_global">
         <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--bootstrap headings-->
+    <style name="df_headdings" parent="df_global">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="df_h1" parent="df_headdings">
+        <item name="android:textSize">40sp</item>
+    </style>
+    <style name="df_h2" parent="df_headdings">
+        <item name="android:textSize">32sp</item>
+    </style>
+    <style name="df_h3" parent="df_headdings">
+        <item name="android:textSize">28sp</item>
+    </style>
+    <style name="df_h4" parent="df_headdings">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="df_h5" parent="df_headdings">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="df_h6" parent="df_headdings">
+        <item name="android:textSize">16sp</item>
     </style>
 
     <!--df buttons-->
@@ -153,7 +174,7 @@
     </style>
 
 
-    <!--bootstrap buttons-->
+    <!--bootstrap 3 buttons-->
 
     <style name="df_btn">
         <item name="android:layout_width">wrap_content</item>
@@ -181,4 +202,206 @@
     <style name="df_btn_danger" parent="df_btn">
         <item name="android:background">@drawable/df_button_danger</item>
     </style>
+    
+    <!--bootstrap 4 buttons-->
+
+
+    <style name="df4_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="cardCornerRadius">4dp</item>
+    </style>
+
+    <style name="df4_btn_sec_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="cardCornerRadius">4dp</item>
+    </style>
+
+    <style name="df4_btn_primary" parent="df4_btn">
+        <item name="cardBackgroundColor">@color/df_blue</item>
+        <item name="android:background">@color/df_blue</item>
+    </style>
+    <style name="df4_btn_secondary" parent="df4_btn">
+        <item name="cardBackgroundColor">@color/df_secondary</item>
+        <item name="android:background">@color/df_secondary</item>
+    </style>
+    <style name="df4_btn_success" parent="df4_btn">
+        <item name="cardBackgroundColor">@color/df_green</item>
+        <item name="android:background">@color/df_green</item>
+    </style>
+    <style name="df4_btn_danger" parent="df4_btn">
+        <item name="cardBackgroundColor">@color/df_red</item>
+        <item name="android:background">@color/df_red</item>
+    </style>
+    <style name="df4_btn_warning" parent="df4_btn">
+        <item name="cardBackgroundColor">@color/df_yellow</item>
+        <item name="android:background">@color/df_yellow</item>
+    </style>
+    <style name="df4_btn_info" parent="df4_btn">
+        <item name="cardBackgroundColor">@color/df_info</item>
+        <item name="android:background">@color/df_info</item>
+    </style>
+    <style name="df4_btn_light" parent="df4_btn_sec_text">
+        <item name="cardBackgroundColor">@color/df_light</item>
+        <item name="android:background">@color/df_light</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+    <style name="df4_btn_dark" parent="df4_btn">
+        <item name="cardBackgroundColor">@color/df_dark</item>
+        <item name="android:background">@color/df_dark</item>
+    </style>
+    <style name="df4_btn_link" parent="df4_btn_sec_text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background"></item>
+        <item name="cardCornerRadius">4dp</item>
+    </style>
+
+
+    <!--bootstrap badge-->
+    <style name="df_badge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:background">@color/df_light</item>
+    </style>
+
+    <!--bootstrap alerts-->
+    <style name="df_alert" parent="df_global">
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="cardCornerRadius">4dp</item>
+    </style>
+    <style name="df_alert_text" parent="df_global">
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="df_alert_primary" parent="df_alert">
+        <item name="cardBackgroundColor">@color/df_alert_primary</item>
+    </style>
+    <style name="df_alert_primary_text" parent="df_alert_text">
+        <item name="android:textColor">@color/df_alert_primary_text</item>
+    </style>
+    <style name="df_alert_secondary" parent="df_alert">
+        <item name="cardBackgroundColor">@color/df_alert_secondary</item>
+    </style>
+    <style name="df_alert_secondary_text" parent="df_alert_text">
+        <item name="android:textColor">@color/df_alert_secondary_text</item>
+    </style>
+    <style name="df_alert_success" parent="df_alert">
+        <item name="cardBackgroundColor">@color/df_alert_success</item>
+    </style>
+    <style name="df_alert_success_text" parent="df_alert_text">
+        <item name="android:textColor">@color/df_alert_success_text</item>
+    </style>
+    <style name="df_alert_danger" parent="df_alert">
+        <item name="cardBackgroundColor">@color/df_alert_danger</item>
+    </style>
+    <style name="df_alert_danger_text" parent="df_alert_text">
+        <item name="android:textColor">@color/df_alert_danger_text</item>
+    </style>
+    <style name="df_alert_warning" parent="df_alert">
+        <item name="cardBackgroundColor">@color/df_alert_warning</item>
+    </style>
+    <style name="df_alert_warning_text" parent="df_alert_text">
+        <item name="android:textColor">@color/df_alert_warning_text</item>
+    </style>
+    <style name="df_alert_info" parent="df_alert">
+        <item name="cardBackgroundColor">@color/df_alert_info</item>
+    </style>
+    <style name="df_alert_info_text" parent="df_alert_text">
+        <item name="android:textColor">@color/df_alert_info_text</item>
+    </style>
+    <style name="df_alert_light" parent="df_alert">
+        <item name="cardBackgroundColor">@color/df_alert_light</item>
+    </style>
+    <style name="df_alert_light_text" parent="df_alert_text">
+        <item name="android:textColor">@color/df_alert_light_text</item>
+    </style>
+    <style name="df_alert_dark" parent="df_alert">
+        <item name="cardBackgroundColor">@color/df_alert_dark</item>
+    </style>
+    <style name="df_alert_dark_text" parent="df_alert_text">
+        <item name="android:textColor">@color/df_alert_dark_text</item>
+    </style>
+
+    <!--complex alert-->
+    <style name="df_heading" >
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!--df lines , hr   -->
+    <style name="df_heading_primary" parent="df_alert_primary_text">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="df_heading_secondary" parent="df_alert_secondary_text">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="df_heading_success" parent="df_alert_success_text">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="df_heading_info" parent="df_alert_info_text">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="df_heading_warning" parent="df_alert_warning_text">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="df_heading_danger" parent="df_alert_danger_text">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="df_heading_light" parent="df_alert_light_text">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="df_heading_dark" parent="df_alert_dark_text">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!--df lines , hr   -->
+    <style name="df_hr_primary" parent="df_hr">
+        <item name="background">@color/df_hr_primary</item>
+    </style>
+    <style name="df_hr_secondary" parent="df_hr">
+        <item name="background">@color/df_hr_secondary</item>
+    </style>
+    <style name="df_hr_success" parent="df_hr">
+        <item name="background">@color/df_hr_success</item>
+    </style>
+    <style name="df_hr_info" parent="df_hr">
+        <item name="background">@color/df_hr_info</item>
+    </style>
+    <style name="df_hr_warning" parent="df_hr">
+        <item name="background">@color/df_hr_warning</item>
+    </style>
+    <style name="df_hr_danger" parent="df_hr">
+        <item name="background">@color/df_hr_danger</item>
+    </style>
+    <style name="df_hr_light" parent="df_hr">
+        <item name="background">@color/df_hr_light</item>
+    </style>
+    <style name="df_hr_dark" parent="df_hr">
+        <item name="background">@color/df_hr_dark</item>
+    </style>
+    
+    <!--bootstrap images-->
+    <style name="df_img_fluid" parent="df_global">
+    </style>
+    <style name="df_img_thumbnail" parent="df_global">
+        <item name="android:paddingTop">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:paddingBottom">25dp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:background">@drawable/df_img_thumbnail</item>
+    </style>
+
 </resources>
