@@ -13,6 +13,9 @@ import android.view.MenuItem;
 public class FrameworkActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    //initialising Droid framework
+    Df df;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +31,14 @@ public class FrameworkActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        //Create Droid Framework class
+        df = new Df(this);
+
+        //making dismissable alert
+        df.registerDismissableAlert(findViewById(R.id.darkAlert));
+        df.registerDismissableAlert(findViewById(R.id.primaryAlert));
+
     }
 
     @Override

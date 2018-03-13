@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1000"
+    android:fromDegrees="0"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:pivotX="40%"
+    android:pivotY="40%"
+    android:startOffset="0"
+    android:toDegrees="360" />
+
+<!--invoke as-->
+    <!--androidRotateAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_animation);-->
+    <!--imageView.startAnimation(androidRotateAnimation);-->

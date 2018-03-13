@@ -41,6 +41,7 @@
     <color name="df_alert_light_text">#818182</color>
     <color name="df_alert_dark">#d6d8d9</color>
     <color name="df_alert_dark_text">#1b1e21</color>
+
     <!--colors for hr-->
     <color name="df_hr_primary">#9fcdff</color>
     <color name="df_hr_secondary">#c8cbcf</color>
@@ -50,6 +51,8 @@
     <color name="df_hr_danger">#f1b0b7</color>
     <color name="df_hr_light">#ececf6</color>
     <color name="df_hr_dark">#b9bbbe</color>
+    <color name="black">#ff000000</color>
+
 
 
 

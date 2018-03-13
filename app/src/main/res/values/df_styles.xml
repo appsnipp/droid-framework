@@ -94,10 +94,10 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingLeft">1dp</item>
         <item name="android:paddingRight">1dp</item>
+        <item name="android:orientation">vertical</item>
     </style>
 
     <style name="df_col_12" parent="df_col_parent">
-
         <item name="android:layout_weight">12</item>
     </style>
     <style name="df_col_11" parent="df_col_parent">
@@ -140,6 +140,7 @@
     <!--bootstrap headings-->
     <style name="df_headdings" parent="df_global">
         <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_alpha_75</item>
     </style>
     <style name="df_h1" parent="df_headdings">
         <item name="android:textSize">40sp</item>
@@ -178,7 +179,7 @@
 
     <style name="df_btn">
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_height">38dp</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">#fff</item>
     </style>
@@ -207,8 +208,8 @@
 
 
     <style name="df4_btn">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">38dp</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">#fff</item>
         <item name="cardCornerRadius">4dp</item>
