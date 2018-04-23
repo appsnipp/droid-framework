@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/df_row_vertical">
+
+    <TextView
+        style="@style/df_h3"
+        android:text="Alerts"/>
+    <View
+        style="@style/df_hr" />
+
+    <android.support.v7.widget.CardView
+        style="@style/df_alert_primary"
+        android:id="@+id/primaryAlert">
+
+        <TextView
+            style="@style/df_alert_primary_text"
+            android:text=" This is a primary alert—check it out! "/>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        style="@style/df_alert_secondary"
+        android:id="@+id/secondaryAlert">
+
+        <TextView
+            style="@style/df_alert_secondary_text"
+            android:text=" This is a secondary alert—check it out!"/>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        style="@style/df_alert_success">
+
+        <TextView
+            style="@style/df_alert_success_text"
+            android:text=" This is a success alert—check it out! "/>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        style="@style/df_alert_warning">
+
+        <TextView
+            style="@style/df_alert_warning_text"
+            android:text=" This is a warning alert—check it out! "/>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        style="@style/df_alert_info">
+
+        <TextView
+            style="@style/df_alert_info_text"
+            android:text=" This is a info alert—check it out! "/>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        style="@style/df_alert_light">
+
+        <TextView
+            style="@style/df_alert_light_text"
+            android:text=" This is a light alert—check it out! "/>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        style="@style/df_alert_dark"
+        android:id="@+id/darkAlert">
+
+        <TextView
+            style="@style/df_alert_dark_text"
+            android:text=" This is a dark alert—check it out! "/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        style="@style/df_alert_success">
+
+        <LinearLayout
+            style="@style/df_row_vertical">
+
+            <TextView
+                style="@style/df_heading_success"
+                android:text="Detailed Alert"/>
+
+            <TextView
+                style="@style/df_alert_success_text"
+                android:text="This alert can contain extra information along with a heading"/>
+
+            <View
+                style="@style/df_hr_success"/>
+
+            <TextView
+                style="@style/df_alert_success_text"
+                android:text="More detailed text can also be included! "/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

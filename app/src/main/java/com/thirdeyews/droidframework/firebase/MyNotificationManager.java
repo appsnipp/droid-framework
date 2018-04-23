@@ -11,6 +11,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.support.v4.app.NotificationCompat;
 import android.text.Html;
 
@@ -63,7 +64,6 @@ public class MyNotificationManager {
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setLargeIcon(BitmapFactory.decodeResource(mCtx.getResources(), R.mipmap.ic_launcher))
                 .setContentText(Html.fromHtml(message).toString())
-                .setPriority(Notification.PRIORITY_MAX)
                 .setSound(uri)
                 .build();
 
@@ -86,6 +86,7 @@ public class MyNotificationManager {
                 );
 
 
+        Uri uri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(mCtx);
         Notification notification;
         notification = mBuilder.setSmallIcon(R.mipmap.ic_launcher).setTicker(title).setWhen(0)
@@ -95,6 +96,7 @@ public class MyNotificationManager {
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setLargeIcon(BitmapFactory.decodeResource(mCtx.getResources(), R.mipmap.ic_launcher))
                 .setContentText(Html.fromHtml(message).toString())
+                .setSound(uri)
                 .build();
 
         notification.flags |= Notification.FLAG_AUTO_CANCEL;
@@ -106,16 +108,36 @@ public class MyNotificationManager {
     //The method will return Bitmap from an image URL
     private Bitmap getBitmapFromURL(String strURL) {
         try {
-            URL url = new URL(strURL);
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setDoInput(true);
-            connection.connect();
-            InputStream input = connection.getInputStream();
-            Bitmap myBitmap = BitmapFactory.decodeStream(input);
-            return myBitmap;
-        } catch (IOException e) {
+            return new GetBitmap().execute(strURL).get();
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
+        }
+    }
+
+
+    class GetBitmap extends AsyncTask<String, Void, Bitmap> {
+
+        private Exception exception;
+
+        protected Bitmap doInBackground(String... urls) {
+            try {
+                URL url = new URL(urls[0]);
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setDoInput(true);
+                connection.connect();
+                InputStream input = connection.getInputStream();
+                Bitmap myBitmap = BitmapFactory.decodeStream(input);
+                return myBitmap;
+            } catch (IOException e) {
+                e.printStackTrace();
+                return null;
+            }
+        }
+
+        protected void onPostExecute(Bitmap bitmap) {
+            // TODO: check this.exception
+            // TODO: do something with the feed
         }
     }
 }

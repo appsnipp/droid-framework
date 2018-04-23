@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/df_row_vertical"
-    android:layout_width="match_parent"
-    android:background="@color/white">
+    style="@style/df_dialog_layout">
 
     <LinearLayout
         style="@style/df_row_vertical"
         android:padding="20dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:background="@color/white">
 
 
         <ImageView
             style="@style/df_global"
+            android:id="@+id/dfDialogImage"
             android:src="@drawable/df_dialog_danger"
             android:layout_width="125dp"/>
 
         <TextView
             style="@style/df_h4"
+            android:id="@+id/dfDialogTitle"
             android:textStyle="normal"
             android:textAlignment="center"
             android:text="Failed"/>
@@ -25,6 +26,7 @@
         <TextView
             style="@style/df_h6"
             android:textStyle="normal"
+            android:id="@+id/dfDialogMessage"
             android:textColor="@color/black_alpha_75"
             android:textAlignment="center"
             android:text="Sorry Task Failed"/>
@@ -33,7 +35,7 @@
 
 
         <Button
-            android:id="@+id/btnUnderstand"
+            android:id="@+id/btnContinue"
             style="@style/df4_btn_danger"
             android:layout_height="40dp"
             android:background="@color/df_danger"

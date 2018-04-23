@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/df_row_vertical"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/btnHide"
+        style="@style/df_btn_success"
+        android:layout_width="match_parent"
+        android:onClick="dfFunctions"
+        android:text="Click me to hide"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btnShrink"
+        style="@style/df_btn_success"
+        android:layout_width="match_parent"
+        android:onClick="dfFunctions"
+        android:text="Click me to Shrink"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btnFadeOut"
+        style="@style/df_btn_success"
+        android:layout_width="match_parent"
+        android:onClick="dfFunctions"
+        android:text="Click me to Fade Out"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btnFadeIn"
+        style="@style/df_btn_success"
+        android:layout_width="match_parent"
+        android:onClick="dfFunctions"
+        android:text="Click me to Fade In"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:id="@+id/btnGrowFromCenter"
+        style="@style/df_btn_success"
+        android:layout_width="match_parent"
+        android:onClick="dfFunctions"
+        android:text="Click me to Grow"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btnAlertMessage"
+        style="@style/df_btn_success"
+        android:layout_width="match_parent"
+        android:onClick="dfFunctions"
+        android:text="Click me show Alert"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btnToastMessage"
+        style="@style/df_btn_success"
+        android:layout_width="match_parent"
+        android:onClick="dfFunctions"
+        android:text="Click me show toast"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:id="@+id/btnDangerAlert"
+        style="@style/df_btn_success"
+        android:layout_width="match_parent"
+        android:onClick="dfFunctions"
+        android:text="Click me to show danger"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:id="@+id/btnSuccessAlert"
+        style="@style/df_btn_success"
+        android:layout_width="match_parent"
+        android:onClick="dfFunctions"
+        android:text="Click me to show success"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:id="@+id/btnNotification"
+        style="@style/df_btn_success"
+        android:layout_width="match_parent"
+        android:onClick="dfFunctions"
+        android:text="Click me to show notification"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btnInternet"
+        style="@style/df_btn_success"
+        android:layout_width="match_parent"
+        android:onClick="dfFunctions"
+        android:text="Click me to check internet"
+        android:layout_marginTop="5dp"/>
+
+
+</LinearLayout>

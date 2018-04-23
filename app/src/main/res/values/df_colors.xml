@@ -53,6 +53,47 @@
     <color name="df_hr_dark">#b9bbbe</color>
     <color name="black">#ff000000</color>
 
+    <color name="df_text_color">#212529</color>
+    <color name="df_card_header">#30000000</color>
+    <color name="df_form_bg">#edeff1</color>
+
+    <!--transparent dialog background color-->
+    <color name="df_transparent_black_background">#80000000</color>
+
+    <!--specific colors-->
+    <color name="df_no_internet_dialog_bk">#fafafb</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#007bff</color>
+    <color name="bg_screen2">#dc3545</color>
+    <color name="bg_screen3">#17a2b8</color>
+    <color name="bg_screen4">#ffc107</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#616161</color>
+    <color name="dot_dark_screen2">#616161</color>
+    <color name="dot_dark_screen3">#616161</color>
+    <color name="dot_dark_screen4">#616161</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#9E9E9E</color>
+    <color name="dot_light_screen2">#9E9E9E</color>
+    <color name="dot_light_screen3">#9E9E9E</color>
+    <color name="dot_light_screen4">#9E9E9E</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
 
 
 

@@ -6,4 +6,25 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!--Startup walkthroughs activity-->
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Slide 1</string>
+    <string name="slide_1_desc">Slide 1 Description</string>
+
+    <string name="slide_2_title">Slide 2</string>
+    <string name="slide_2_desc">Slide 2 Description</string>
+
+    <string name="slide_3_title">Slide 3</string>
+    <string name="slide_3_desc">Slide 3 Description</string>
+
+    <string name="slide_4_title">Slide 4</string>
+    <string name="slide_4_desc">Slide 4 Description</string>
+
+    <string name="title_activity_start">@string/app_name</string>
+
 </resources>

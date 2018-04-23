@@ -1,5 +1,6 @@
 package com.thirdeyews.droidframework;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -9,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class FrameworkActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -36,10 +38,18 @@ public class FrameworkActivity extends AppCompatActivity
         df = new Df(this);
 
         //making dismissable alert
-        df.registerDismissableAlert(findViewById(R.id.darkAlert));
-        df.registerDismissableAlert(findViewById(R.id.primaryAlert));
+        df.registerDismissableAlert(R.id.darkAlert);
+        df.registerDismissableAlert(R.id.primaryAlert);
+        df.registerDismissableAlert(R.id.alertDismissible,R.id.alertCloseButton);
+        df.showSmallNotification("Sample","Sample Message",new Intent(this,FrameworkActivity.class));
 
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
 
     @Override
     public void onBackPressed() {
@@ -96,5 +106,52 @@ public class FrameworkActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+
+    /**
+     df functions
+     **/
+    public void dfFunctions(View view){
+        switch (view.getId()){
+            case R.id.btnHide:
+                df.hide(findViewById(R.id.btnHide));
+                break;
+            case R.id.btnShrink:
+                df.shringToCenterAnimation(findViewById(R.id.btnShrink));
+                break;
+            case R.id.btnFadeOut:
+                df.fadeOutAnimation(findViewById(R.id.btnFadeOut));
+                break;
+            case R.id.btnFadeIn:
+                df.fadeInAnimation(findViewById(R.id.btnFadeIn));
+                break;
+            case R.id.btnGrowFromCenter:
+                df.growFromCenterAnimation(findViewById(R.id.btnGrowFromCenter));
+                break;
+            case R.id.btnAlertMessage:
+                df.alert("Sample ALert");
+                break;
+            case R.id.btnToastMessage:
+                df.shortToast("Sample Toast");
+                break;
+            case R.id.btnDangerAlert:
+                df.dfDangerAlert();
+                break;
+            case R.id.btnSuccessAlert:
+                df.dfSuccessAlert();
+                break;
+            case R.id.btnInternet:
+//                setTheme(R.style.AppThemeRed );
+//                TaskStackBuilder.create(this)
+//                        .addNextIntent(new Intent(this, FrameworkActivity.class))
+//                        .addNextIntent(getIntent())
+//                        .startActivities();
+                df.getInternetStatus();
+                break;
+            case R.id.btnNotification:
+                df.showSmallNotification("Sample","sample notification",new Intent(this,FrameworkActivity.class));
+                break;
+        }
     }
 }

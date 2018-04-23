@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/df_dialog_layout">
+
+    <android.support.v7.widget.CardView
+       style="@style/df_global"
+        app:cardBackgroundColor="@color/df_form_bg"
+        android:elevation="2dp">
+
+        <LinearLayout
+            style="@style/df_row_vertical"
+            android:padding="20dp"
+            android:gravity="center"
+            android:background="@color/df_no_internet_dialog_bk">
+
+
+            <ImageView
+
+                android:id="@+id/dfDialogImage"
+                android:src="@drawable/df_no_internet"
+                android:layout_width="125dp"
+                android:layout_height="125dp"/>
+
+            <TextView
+                style="@style/df_text_small_head"
+                android:textStyle="normal"
+                android:textAlignment="center"
+                android:text="No internet available"/>
+
+            <TextView
+                style="@style/df_global"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:id="@+id/dfDialogMessage"
+                android:textAlignment="center"
+                android:text="Make sure you are connected to internet and click retry!"/>
+
+
+            <Button
+                style="@style/df_button"
+                android:id="@+id/btnNoInternetRetry"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:text="Retry"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

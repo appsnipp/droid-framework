@@ -16,7 +16,6 @@
 
     <!--<bootstrap colors-->
 
-
     <style name="df_global">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -31,6 +30,7 @@
         <item name="android:layout_marginLeft">@dimen/df_dimen_margin</item>
         <item name="android:layout_marginRight">@dimen/df_dimen_margin</item>
         <item name="android:layout_marginBottom">@dimen/df_dimen_margin</item>
+        <item name="android:orientation">vertical</item>
         <item name="android:background">@color/white</item>
     </style>
 
@@ -161,6 +161,11 @@
         <item name="android:textSize">16sp</item>
     </style>
 
+    <style name="df_p" parent="df_global">
+        <item name="android:textColor">@color/df_text_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
     <!--df buttons-->
     <style name="df_button" parent="df_global">
         <item name="android:layout_height">32dp</item>
@@ -174,6 +179,10 @@
         <item name="android:shadowRadius">5</item>
     </style>
 
+    <style name="df_button_transparent" parent="df_button">
+        <item name="android:background">@drawable/df_rounded_transparent_button</item>
+        <item name="android:textColor">@color/df_text_color</item>
+    </style>
 
     <!--bootstrap 3 buttons-->
 
@@ -405,4 +414,53 @@
         <item name="android:background">@drawable/df_img_thumbnail</item>
     </style>
 
+    <!--df dialog-->
+
+    <style name="df_dialog" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowBackground">@color/df_transparent_black_background</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="df_dialog_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!--df alerts-->
+    <style name="df_card_body" parent="df_row_vertical">
+        <item name="android:paddingTop">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:paddingBottom">25dp</item>
+        <item name="android:paddingLeft">25dp</item>
+
+    </style>
+    <style name="df_card_title" parent="df_h5">
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+    <style name="df_card_content" parent="df_p">
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+    <style name="df_card_header" parent="df_row_vertical">
+        <item name="android:paddingTop">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:paddingBottom">25dp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:background">@color/df_card_header</item>
+    </style>
+
+    <!--close button-->
+    <style name="df_ic_parent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="df_ic_close" parent="df_ic_parent">
+        <item name="android:src">@android:drawable/ic_menu_close_clear_cancel</item>
+    </style>
 </resources>

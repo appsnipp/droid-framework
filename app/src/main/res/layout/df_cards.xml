@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/df_row_vertical">
+
+    <TextView
+        style="@style/df_h3"
+        android:text="Cards"/>
+    <View
+        style="@style/df_hr" />
+
+    <android.support.v7.widget.CardView
+        style="@style/df_container_card">
+
+        <LinearLayout
+            style="@style/df_row_vertical">
+            <ImageView
+                style="@style/df_global"
+                android:layout_height="200dp"
+                android:src="@color/df_transparent_black_background"/>
+            
+            <LinearLayout
+                style="@style/df_card_body">
+                <TextView
+                    style="@style/df_card_title"
+                    android:text="Card Title"/>
+                <TextView
+                    style="@style/df_card_content"
+                    android:text="Some quick example text to build on the card title and make up the bulk of the card's content."/>
+
+                <Button
+                    style="@style/df4_btn_secondary"
+                    android:text="Go Somewhere"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        style="@style/df_container_card">
+
+        <LinearLayout
+            style="@style/df_row_vertical">
+
+            <LinearLayout
+                style="@style/df_card_header">
+
+                <TextView
+                    style="@style/df_p"
+                    android:text="Featured"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/df_card_body">
+                <TextView
+                    style="@style/df_card_title"
+                    android:text="Special title treatment"/>
+                <TextView
+                    style="@style/df_card_content"
+                    android:text="With supporting text below as a natural lead-in to additional content."/>
+
+                <Button
+                    style="@style/df4_btn_danger"
+                    android:text="Go Somewhere"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
