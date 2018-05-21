@@ -1,12 +1,16 @@
 <resources>
     <!--dimens-->
     <dimen name="df_dimen_margin">12dp</dimen>
+    <dimen name="df_dimen_margin_half">6dp</dimen>
     <dimen name="df_dimen_ios_margin">12dp</dimen>
     <dimen name="df_dimen_ios_no_margin">0dp</dimen>
     <dimen name="df_dimen_card_corner_radius">6dp</dimen>
     <dimen name="df_dimen_hr_height">1dp</dimen>
     <dimen name="small_text">13.0sp</dimen>
     <dimen name="normal_margin">10dp</dimen>
+    <dimen name="big_text_1">18.0sp</dimen>
+    <dimen name="normal_text">15.0sp</dimen>
+
 
     <!--<colors-->
     <color name="formBg">#f0f0f0</color>
@@ -26,10 +30,10 @@
 
     <!--style for container-->
     <style name="df_container" parent="df_global">
-        <item name="android:layout_marginTop">@dimen/df_dimen_margin</item>
+        <item name="android:layout_marginTop">@dimen/df_dimen_margin_half</item>
         <item name="android:layout_marginLeft">@dimen/df_dimen_margin</item>
         <item name="android:layout_marginRight">@dimen/df_dimen_margin</item>
-        <item name="android:layout_marginBottom">@dimen/df_dimen_margin</item>
+        <item name="android:layout_marginBottom">@dimen/df_dimen_margin_half</item>
         <item name="android:orientation">vertical</item>
         <item name="android:background">@color/white</item>
     </style>
@@ -78,6 +82,19 @@
     <style name="df_text_small_head_bold" parent="df_global">
         <item name="android:textStyle">bold</item>
     </style>
+    <!--text styles-->
+
+    <style name="df_text_bold" parent="df_global">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="df_text_head_1" parent="df_text_bold">
+        <item name="android:textSize">@dimen/big_text_1</item>
+    </style>
+
+    <style name="df_text_normal" parent="df_text_bold">
+        <item name="android:textSize">@dimen/normal_text</item>
+    </style>
+
 
 
     <!--df grid system-->
@@ -92,8 +109,7 @@
     <style name="df_col_parent">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingLeft">1dp</item>
-        <item name="android:paddingRight">1dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
         <item name="android:orientation">vertical</item>
     </style>
 
@@ -212,7 +228,7 @@
     <style name="df_btn_danger" parent="df_btn">
         <item name="android:background">@drawable/df_button_danger</item>
     </style>
-    
+
     <!--bootstrap 4 buttons-->
 
 
@@ -402,7 +418,7 @@
     <style name="df_hr_dark" parent="df_hr">
         <item name="background">@color/df_hr_dark</item>
     </style>
-    
+
     <!--bootstrap images-->
     <style name="df_img_fluid" parent="df_global">
     </style>
