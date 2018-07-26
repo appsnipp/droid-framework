@@ -13,7 +13,6 @@ public class Validator {
 
     public static boolean isEmpty(String content) {
         return content.trim().isEmpty();
-
     }
 
     public static boolean isValidEmail(String email) {
@@ -21,15 +20,27 @@ public class Validator {
     }
 
     public static boolean isValidMobile(String number) {
-       return number.matches(MOB_PATTERN)&& !TextUtils.isEmpty(number);
+        return number.matches(MOB_PATTERN)&& !TextUtils.isEmpty(number);
     }
 
     public static boolean isMinString(String name, int len) {
-        return name.length()<len-1?false:true;
+        return name.length()>len-1;
     }
 
     public static boolean isFixedLength(String name, int len){
-        return name.length() == len?false:true;
+        return name.length() != len;
+    }
+    public  static boolean isLessThan(Double number1,Double number2){
+        return number1<number2?true:false;
+    }
+    public static boolean isEmptyNumber(String numb){
+        int num = 0;
+        try{
+            num = Integer.parseInt(numb);
+        }catch (Exception e){
+
+        }
+        return num>0;
     }
 
 

@@ -1,8 +1,10 @@
-package com.thirdeyews.droidframework.firebase; /**
+package com.thirdeyews.droidframework.firebase;
+/**
  * Created by kapil on 28/11/17.
  */
 
 import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -12,6 +14,7 @@ import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 import android.text.Html;
 
@@ -54,7 +57,15 @@ public class MyNotificationManager {
         bigPictureStyle.setSummaryText(Html.fromHtml(message).toString());
         bigPictureStyle.bigPicture(getBitmapFromURL(url));
         Uri uri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(mCtx);
+
+        //modified for adding support for higher versions (above 26)
+        NotificationCompat.Builder mBuilder;
+        if(Build.VERSION.SDK_INT > 25){
+            mBuilder = new NotificationCompat.Builder(mCtx,"grand_ceramics");
+        }else{
+            mBuilder =  new NotificationCompat.Builder(mCtx);
+        }
+
         Notification notification;
         notification = mBuilder.setSmallIcon(R.mipmap.ic_launcher).setTicker(title).setWhen(0)
                 .setAutoCancel(true)
@@ -87,7 +98,15 @@ public class MyNotificationManager {
 
 
         Uri uri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(mCtx);
+
+
+        //modified for adding support for higher versions (above 26)
+        NotificationCompat.Builder mBuilder;
+        if(Build.VERSION.SDK_INT > 25){
+            mBuilder = new NotificationCompat.Builder(mCtx,"grand_ceramics");
+        }else{
+            mBuilder =  new NotificationCompat.Builder(mCtx);
+        }
         Notification notification;
         notification = mBuilder.setSmallIcon(R.mipmap.ic_launcher).setTicker(title).setWhen(0)
                 .setAutoCancel(true)
@@ -114,6 +133,23 @@ public class MyNotificationManager {
             return null;
         }
     }
+
+    private void createNotificationChannel() {
+        // Create the NotificationChannel, but only on API 26+ because
+        // the NotificationChannel class is new and not in the support library
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = "sample";
+            String description = "testing channel";
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel("my_channel_01", name, importance);
+            channel.setDescription(description);
+            // Register the channel with the system; you can't change the importance
+            // or other notification behaviors after this
+            NotificationManager notificationManager = mCtx.getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }
+
 
 
     class GetBitmap extends AsyncTask<String, Void, Bitmap> {
