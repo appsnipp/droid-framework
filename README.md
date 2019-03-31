@@ -8,3 +8,5 @@ Many web designers tend not to develop for android studio, mainly because of its
 All the boilerplate java codes for development would be available along with all the designing structures.
 We would like to follow open culture, and so all source code would be openly available on GitHub !. The collaborated development effort would be explained by a supporting blog.
 The project would be helpful for both designers and developers. Using the standards from a Framework like bootstrap would be an add-on!
+
+![](https://github.com/3idroid/droid-framework/blob/master/reusable%20components.png?raw=true)
